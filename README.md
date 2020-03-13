@@ -9,13 +9,19 @@ MVC application to help bakery ownder track the vendors that purchase baked good
 
 ## Project Specifications
 
+User can choose if they want to view vendor or view exixting vendors.
+* User clicks on Add a new vendor button
+* Application routes the user to the vendors/new page
 
-* 
-* 
+User can complete a form to add a new vendor
+* Input: Vendor name: Piazza Italia; Vendor description: restaurant; clicks "Add" button
+* Output: User is routed to /vendors page displaying vendors list
+
+User can choose to look at details of each vendor on vendor list
+* Input: clicks on "Piazza Italia" link
+* Output: User is routed to the page displaying existing orders for Piazza Italia
 
 
-* Input: 
-* Output: 
 
 ## Setup/Installation Requirements
 
@@ -24,10 +30,10 @@ _In Terminal:_
 * Navigate to where you want this application to be saved, i.e.:
 ```cd desktop```
 * Clone the file from GitHub with HTTPS
-```git clone https://github.com/kristinaht/bakery```
+```git clone https://github.com/kristinaht/BakeryVendors.Solution```
 * Open file in your preferred text editor
 
-* On Windows: ```cd Bakery```, followed by ```code .```
+* On Windows: ```cd BakeryVendors.Solution```, followed by ```code .```
 * Type ``` dotnet build``` followed by ```dotnet run``` to run program.
 
 
@@ -37,7 +43,7 @@ _No known bugs at this time._
 
 ## Support and contact details
 
-_Have a bug or an issue with this application? [Open a new issue](https://github.com/kristinaht/bakery) here on GitHub._
+_Have a bug or an issue with this application? [Open a new issue](https://github.com/kristinaht/BakeryVendors.Solution) here on GitHub._
 
 ## Technologies Used
 

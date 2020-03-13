@@ -5,7 +5,7 @@ using BakeryVendors.Models;
 
 namespace BakeryVendors.Controllers
 {
-  public class VendorController: Controller
+  public class VendorsController: Controller
   {
     [HttpGet("/vendors")]
     public ActionResult Index()
@@ -28,14 +28,15 @@ namespace BakeryVendors.Controllers
       return RedirectToAction("Index");
     }
 
-    [HttpGet("/vendors/{vendorId}/order")]
+    [HttpPost("/vendors/{vendorId}/orders")]
     public ActionResult Create(int vendorId, string title, string orderDescription, string price, string date)
     {
       Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor foundVendor = Vendor.Find(vendorId);
+      List<Order> vendorOrders = foundVendor.Orders;
       Order newOrder =new Order(title, orderDescription, price, date);
       model.Add("vendor", foundVendor);
-      model.Add("orders", newOrder);
+      model.Add("orders", vendorOrders);
       return View("Show", model);
     }
 

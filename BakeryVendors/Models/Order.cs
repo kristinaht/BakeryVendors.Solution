@@ -18,5 +18,15 @@ namespace BakeryVendors.Models
       _orderInstances.Add(this);
       Id = _orderInstances.Count;
     }
+
+    public static GetAll()
+    {
+      return _orderInstances;
+    }
+
+    public static Order Find(int searchId)
+    {
+      return _orderInstances[searchId - 1];
+    }
   }
 }

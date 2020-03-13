@@ -28,5 +28,10 @@ namespace BakeryVendors.Models
     {
       return _vendorInstances[searchId - 1];
     }
+    
+    public void AddOrder(Order order) //not a static method because it is called on specific instance of vendor class
+    {
+      Orders.Add(order);
+    }
   }
 }

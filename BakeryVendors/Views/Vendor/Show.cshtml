@@ -1,0 +1,12 @@
+<h3>Here are all the orders for this Vendor</h3>
+
+<ol>
+  @foreach(Order order in @Model["orders"])
+  {
+    <li><a href='/artists/@Model["artist"].Id/orders/@order.Id'></a>@order.Title</li>
+  }
+</ol>
+
+<p><a href=''>Add a new order</a></p>
+<p><a href='/'>Return to main page</a></p>
+<p><a href=''>Return to vendor list</a></p>

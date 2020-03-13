@@ -28,6 +28,5 @@ namespace BakeryVendors.Controllers
       return RedirectToAction("Index");
     }
 
-    // [HttpGet("/vendors/{vendorId}/order")]
   }
 }

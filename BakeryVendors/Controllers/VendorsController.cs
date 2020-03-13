@@ -28,7 +28,6 @@ namespace BakeryVendors.Controllers
       return RedirectToAction("Index");
     }
 
-    
     [HttpGet("/vendors/{vendorId}/order")]
     public ActionResult Create(int vendorId, string title, string orderDescription, string price, string date)
     {

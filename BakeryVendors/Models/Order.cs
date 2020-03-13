@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+
 namespace BakeryVendors.Models
 {
   public class Order
@@ -19,7 +20,7 @@ namespace BakeryVendors.Models
       Id = _orderInstances.Count;
     }
 
-    public static GetAll()
+    public static List<Order> GetAll()
     {
       return _orderInstances;
     }

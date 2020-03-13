@@ -10,13 +10,13 @@ namespace BakeryVendors.Models
     private static List<Vendor> _vendorInstances = new List<Vendor>{};
     public List<Order> Orders { get; set; }
 
-    publid Vendor(string name, string description)
+    public Vendor(string name, string description)
     {
       Name = name;
       Description = description;
       _vendorInstances.Add(this);
       Id = _vendorInstances.Count;
-      Orders = new List<Order>(); //add {}?
+      Orders = new List<Order>{};
     }
 
     public static List<Vendor> GetAll()

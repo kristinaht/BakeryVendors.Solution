@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+// using BakeryVendors.Models;
 
-namespace MusicOrganizer.Controllers
+namespace BakeryVendors.Controllers
 {
   public class HomeController: Controller
   {

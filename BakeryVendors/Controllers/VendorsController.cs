@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 using Microsoft.AspNetCore.Mvc;
-using MusicOrganizer.Models;
+using BakeryVendors.Models;
 
 namespace BakeryVendors.Controllers
 {
@@ -11,7 +11,7 @@ namespace BakeryVendors.Controllers
     public ActionResult Index()
     {
       List<Vendor> allVendors = Vendor.GetAll();
-      return View();
+      return View(allVendors);
 
     }
   }

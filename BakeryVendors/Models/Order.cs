@@ -11,7 +11,7 @@ namespace BakeryVendors.Models
     public int Id { get; }
     private static List<Order> _orderInstances = new List<Order>{}; //for creating order IDs
     public Order(string title, string description, string price, string date)
-    // public Order(string title)
+
     {
       Title = title;
       Description = description;
